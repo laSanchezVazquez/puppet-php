@@ -8,6 +8,7 @@
 
 class php::repo::redhat (
   $version = '7.2',
+  $yum_repo = 'remi_php72',
 ) {
 
   $releasever = $facts['os']['name'] ? {
